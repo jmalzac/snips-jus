@@ -2,7 +2,7 @@ package_name: jushack
 class_name: JusHack
 description: Hacked jus machine Snips skill
 intents:
-  - intent: pour
+  - intent: jus
     action: |
       {%
       jus_size = ''

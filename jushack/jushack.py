@@ -50,7 +50,7 @@ class JusHack:
             JusHack.jus_size_dict = JusHack.extra_size_dict
             
     @classmethod
-    def pour(self, jus_size):
+    def jus(self, jus_size):
         jus_size =jus_size.encode('utf8')
         number = max(number, MIN_JUS)
         number = min(number, MAX_JUS)
@@ -63,5 +63,5 @@ class JusHack:
 if (__name__ == "__main__"):
     c = JusHack();
     c.jus("normal", "petit",1)
-    c.pour("normal", "grand",2)
+    c.jus("normal", "grand",2)
     

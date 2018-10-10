@@ -62,5 +62,5 @@ if __name__ == "__main__":
     skill = Skill()
     with Hermes(MQTT_ADDR) as h:
         h.skill = skill
-        h.subscribe_intent("jmalzac:pour", callback) \
+        h.subscribe_intent("jmalzac:jus", callback) \
          .loop_forever()
