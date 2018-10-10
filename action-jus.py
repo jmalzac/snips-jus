@@ -48,14 +48,7 @@ def callback(hermes, intent_message):
     s = extract_jus_size(intent_message)
     jus_size = s[0] if len(s) else ""
     number = 1
-    if len(n):
-        try:
-            number = int(n[0])
-        except ValueError, e:
-            number = 2
-    print(t)
     print(s)
-    print(ta)
     hermes.skill.jus.jus(jus_size = jus_size)
 
 if __name__ == "__main__":
